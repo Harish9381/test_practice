@@ -20,7 +20,7 @@ sub_faculty = {
 
 pass_mark = {}
 
-with open('C:/Users/HP/OneDrive/Desktop/exam/test_practice/Assignments/student_marks.csv','r') as csvfile:
+with open('Assignments/student_marks.csv','r') as csvfile:
     data = csv.DictReader(csvfile)
     for marks in data:
         if int(marks['Telugu']) > 40:

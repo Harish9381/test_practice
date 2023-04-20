@@ -1,5 +1,8 @@
 # 4 Who is the top student with maximum total?
+
 import csv
+
+
 with open('C:/Users/HP/OneDrive/Desktop/Assignments/student_marks.csv','r') as csvfile:
     data = csv.DictReader(csvfile)
     total_marks = {}
@@ -9,4 +12,5 @@ with open('C:/Users/HP/OneDrive/Desktop/Assignments/student_marks.csv','r') as c
         total = sum(marks)
         total_marks[records['studentname']] = total
     students = sorted(total_marks.items(), key=lambda x: x[1], reverse=True)
+
 print(f"The Top Student is {students[0][0]} and his top mark is {students[0][1]}")

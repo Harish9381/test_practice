@@ -1,4 +1,4 @@
-#6. What is the average mark for each subject, (ignore failures)?
+# What is the average mark for each subject, (ignore failures)?
 import csv
 
 telugu_sum = 0; telugu_count = 0
